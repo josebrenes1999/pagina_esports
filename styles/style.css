@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+#principal{
+    background-color: #F1EFEF; /* color de fondo principal */
+    height: 100vh; /* Altura completa de la interfaz */
+    display: flex; /* Hace que el contenido dentro del contenedor sea flexible */
+    justify-content: space-between; /* Crea un espacio entre los elementos */
+    padding: 7rem; /* Relleno general para este contenedor*/
+}
+
+.opciones, .contenido{
+    
+}
+
+.opciones{
+    width: 25%; /* Ancho del div*/
+    box-shadow: 0px 4px 4px #0000003e; /* Sombra */
+    border-radius: 20px; /* Border redondos */
+    background-color: white; /* Fondo del primer div */
+    display: flex; /* Hace que el contenido dentro del contenedor sea flexible */
+    flex-direction: column; /* Alineamos verticalmente los elementos */
+    align-items: center; /* Centramos los elementos en el eje x */ 
+    padding: 3rem; /* Relleno general para este contenedor*/
+    gap: 1.5rem; /* Separación de los elementos flexibles */
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.opciones h2{
+    width: 45%;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+}
+.categorias button{
+    border: 1px solid #F9F6F6;
+    box-shadow: 0 4px 3px #0000003e;
+    border-radius: 5px;
+    width: 70%;
+    padding: 14px 16px;
+    margin-top: 5%;
+    transition: .2s ease-in-out;
+}
+.categorias button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(117, 174, 226);
+}
+
+.iconos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 24px;
+    margin-bottom: 6rem;
+    
+}
+.iconos i{
+    cursor: pointer;
+}
+
+.opciones img{
+    width: 45%; /* O cualquier tamaño deseado */
+    height: auto;
+}
+
+.contenido{
+    width: 70%; /* Ancho del div*/
+    box-shadow: 0 4px 3px #0000003e; /* Sombra */
+    border-radius: 20px; /* Border redondos */
+    background-color: rgba(255, 255, 255, 1); /* Fondo del primer div */
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.articulo{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 3px #0000003e;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #F1EFEF;
+}
+
+.box-img{
+    overflow: hidden; /* Para que no sobresalga del div*/
+    width: 35%;
+}
+
+.box-img img{
+    width: 100%;
+    scale: 1.2;
+    transform: translateX(-20px);
+}
+
+.info{
+    width: 60%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2rem;
+
+}
+.info h3{
+    font-size: 3rem;
+}
+.info p{
+    font-size: 18px;
+    align-items: end;
+    width: 70%;
+
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+}
